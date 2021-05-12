@@ -1,56 +1,51 @@
 # probable-guide
 My CLI CheatSheet
-Git
-Download the repo
-git clone https://github.com/peter-yeh/ComputerOS.git
 
-Get change from github, do it before making changes to get the latest update
-git pull
+## Git
+### Download repo
+`git clone https://github.com/peter-yeh/ComputerOS.git`
 
-Check status of current branch
-git status
+##### Get change from github, do it before making changes to get the latest update
+`git pull`
 
-Stage all changes
-git add .
+##### Check status of current branch
+`git status`
 
-Add All changes
-git commit -m 'First commit'
+##### Stage all changes
+`git add .`
 
-Push all changes to github
-git push
+##### Add All changes
+`git commit -m 'First commit'` 
 
-ssh
-Move files from local storage to remote location, e.g. sunfire
-scp lab1.tar.gz yuchun@sunfire.comp.nus.edu.sg:lab1.tar.gz
+##### Push all changes to github
+`git push`
 
-Move files from sunfire to xcne5, -r for whole folder recursive
-scp lab1.tar.gz yuchun@xcne5:lab1.tar.gz
 
-Comparing files/ testing labs
-Compile the c code into exe format
-gcc ex1.c -o ex1.exe
+## SSH
+##### Move files from local storage to remote location, e.g. sunfire
+`scp lab1.tar.gz yuchun@sunfire.comp.nus.edu.sg:lab1.tar.gz`
 
-Compare the answers
-./ex1.exe < test1.in
+##### Move files from sunfire to xcne5, -r for whole folder recursive
+`scp lab1.tar.gz yuchun@xcne5:lab1.tar.gz`
 
-./ex1.exe < test1.in > myOut1.txt
 
-diff test1.out myOut1.txt
+## Useful Unix commands
+### Compile c code into exe format
+`gcc ex1.c -o ex1.exe`
 
-Unzip the zip files
-gunzip -c lab1.tar.gz | tar xvf -
+### Pass text in test1.in into ex1.exe
+`./ex1.exe < test1.in`
 
-Remove whole folder -r recusrive
-yes | rm -r folder // for sunfire since it keeps asking confirmation
+`./ex1.exe < test1.in > myOut1.txt`
 
-rm -r folder // for xcne
+### Comparing files
+`diff test1.out myOut1.txt`
 
-Checking files b4 submission
-Zip files in the L1 folder
-zip A0123456X.zip ex2/ex2.c ex3/ex3.c
+### Unzip the zip files
+`gunzip -c lab1.tar.gz | tar xvf -`
 
-Check if zip file structure is of the correct layout
-chmod +x ./check_zip.sh
+### Remove whole folder (-r recusrive)
+`yes | rm -r folder` // for sunfire since it keeps asking confirmation
 
-./check_zip.sh A0123456X.zip
+`rm -r folder` // for xcne
 
