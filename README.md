@@ -2,31 +2,37 @@
 My CLI CheatSheet
 
 ## Git
-### Download repo
+#### Download repo
 `git clone https://github.com/peter-yeh/ComputerOS.git`
 
-##### Get change from github, do it before making changes to get the latest update
+#### Get change from github, do it before making changes to get the latest update
 `git pull`
 
-##### Check status of current branch
+#### Check status of current branch
 `git status`
 
-##### Stage all changes
+#### Stage all changes
 `git add .`
 
-##### Add All changes
+#### Add All changes
 `git commit -m 'First commit'` 
 
-##### Push all changes to github
+#### Push all changes to github
 `git push`
 
+#### Stash
+`git stash save "stash message"`
+`git stash show`
+`git stash -u` // stash untracked(uncommitted) files too
+`git stash list`
+`git stash pop` // reapply the stash
 
 ## SSH
-##### Move files from local storage to remote location, e.g. sunfire
+### Move **files** from local storage to remote location, e.g. sunfire
 `scp lab1.tar.gz yuchun@sunfire.comp.nus.edu.sg:lab1.tar.gz`
 
-##### Move files from sunfire to xcne5, -r for whole folder recursive
-`scp lab1.tar.gz yuchun@xcne5:lab1.tar.gz`
+### Move **folder** from sunfire to xcne5, -r
+`scp -r lab1.tar.gz yuchun@xcne5:lab1.tar.gz`
 
 
 ## Useful Unix commands
