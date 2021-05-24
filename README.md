@@ -20,11 +20,18 @@ My CLI CheatSheet
 #### Push all changes to github
 `git push`
 
+#### Merge
+`git merge feature` // call in master branch
+
 #### Stash
 `git stash save "stash message"`
+
 `git stash show`
+
 `git stash -u` // stash untracked(uncommitted) files too
+
 `git stash list`
+
 `git stash pop` // reapply the stash
 
 ## SSH
