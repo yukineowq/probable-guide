@@ -5,7 +5,7 @@ My CLI CheatSheet
 #### Download repo
 `git clone https://github.com/peter-yeh/ComputerOS.git`
 
-#### Get change from github, do it before making changes to get the latest update
+#### Get change from github
 `git pull`
 
 #### Check status of current branch
@@ -14,25 +14,31 @@ My CLI CheatSheet
 #### Stage all changes
 `git add .`
 
-#### Add All changes
+#### Commit the changes
 `git commit -m 'First commit'` 
 
-#### Push all changes to github
+#### Push the commits to github
 `git push`
 
-#### Merge
+#### Merge feature branch into current branch
 `git merge feature` // call in master branch
 
 #### Stash
+
+##### Create a stash with the name
 `git stash save "stash message"`
 
+##### Stash uncommitted files
+`git stash -u`
+
+##### Check the stashes
 `git stash show`
 
-`git stash -u` // stash untracked(uncommitted) files too
-
+##### List the stash
 `git stash list`
 
-`git stash pop` // reapply the stash
+##### Reapply the stash
+`git stash pop`
 
 ## SSH
 ### Move **files** from local storage to remote location, e.g. sunfire
