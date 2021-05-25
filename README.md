@@ -11,6 +11,12 @@ My CLI CheatSheet
 #### Check status of current branch
 `git status`
 
+#### See the commit log
+`git log`
+
+#### See the commit tree
+`git log --graph`
+
 #### Stage all changes
 `git add .`
 
