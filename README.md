@@ -2,6 +2,15 @@
 My CLI CheatSheet
 
 ## Git
+
+### Lingo
+#### Origin
+Origin === probable-guide.github.com. Origin is a variable which points to the URL which stores the remote repo
+
+#### Remote
+A repo in the cloud. `origin` points to the remote repo
+
+### Basic git commands
 #### Download repo
 `git clone https://github.com/peter-yeh/ComputerOS.git`
 
@@ -26,25 +35,42 @@ My CLI CheatSheet
 #### Push the commits to github
 `git push`
 
+
+### Stash
+#### Create a stash with the name
+`git stash save "stash message"`
+
+#### Stash uncommitted files
+`git stash -u`
+
+#### Check the stashes
+`git stash show`
+
+#### List the stash
+`git stash list`
+
+#### Reapply the stash
+`git stash pop`
+
+### Git merging files
 #### Merge feature branch into current branch
 `git merge feature` // call in master branch
 
-#### Stash
+##### Abort merge conflict
+`git merge --abort`
 
-##### Create a stash with the name
-`git stash save "stash message"`
+### Git editing history
+#### Un commit commits in git history
+`git reset HEAD^`
 
-##### Stash uncommitted files
-`git stash -u`
+##### Discard all non committed files
+`git clean -df`
 
-##### Check the stashes
-`git stash show`
+#### Remove non staged files
+`git restore .`
 
-##### List the stash
-`git stash list`
-
-##### Reapply the stash
-`git stash pop`
+#### Update the git repo in origin after changing the commit tree
+`git push origin +HEAD`
 
 ## SSH
 ### Move **files** from local storage to remote location, e.g. sunfire
