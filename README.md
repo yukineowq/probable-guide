@@ -10,6 +10,8 @@ Origin === probable-guide.github.com. Origin is a variable which points to the U
 #### Remote
 A repo in the cloud. `origin` points to the remote repo
 
+  &nbsp;&nbsp;
+
 ### Basic git commands
 #### Download repo
 `git clone https://github.com/peter-yeh/ComputerOS.git`
@@ -35,6 +37,28 @@ A repo in the cloud. `origin` points to the remote repo
 #### Push the commits to github
 `git push`
 
+&nbsp;&nbsp;
+
+### Working in different branches
+
+#### Create a new branch
+`git checkout -b "dev-yuki`
+
+#### Checkout from the original branch
+`git checkout dev`
+
+#### Get change from github
+`git pull`
+
+#### Back to own branch
+`git checkout dev-yuki`
+
+#### Merge all changes
+`git merge dev`
+
+<a href="https://www.atlassian.com/git/tutorials/using-branches/git-checkout">Git Checkout</a>
+
+  &nbsp;&nbsp;
 
 ### Stash
 #### Create a stash with the name
@@ -52,6 +76,8 @@ A repo in the cloud. `origin` points to the remote repo
 #### Reapply the stash
 `git stash pop`
 
+  &nbsp;&nbsp;
+  
 ### Git merging files
 #### Merge feature branch into current branch
 `git merge feature` // call in master branch
@@ -59,6 +85,8 @@ A repo in the cloud. `origin` points to the remote repo
 ##### Abort merge conflict
 `git merge --abort`
 
+  &nbsp;&nbsp;
+  
 ### Git editing history
 #### Un commit commits in git history
 `git reset HEAD^`
@@ -72,6 +100,8 @@ A repo in the cloud. `origin` points to the remote repo
 #### Update the git repo in origin after changing the commit tree
 `git push origin +HEAD`
 
+  &nbsp;&nbsp;
+
 ## SSH
 ### Move **files** from local storage to remote location, e.g. sunfire
 `scp lab1.tar.gz yuchun@sunfire.comp.nus.edu.sg:lab1.tar.gz`
@@ -79,6 +109,7 @@ A repo in the cloud. `origin` points to the remote repo
 ### Move **folder** from sunfire to xcne5, -r
 `scp -r lab1.tar.gz yuchun@xcne5:lab1.tar.gz`
 
+  &nbsp;&nbsp;
 
 ## Useful Unix commands
 ### Compile c code into exe format
